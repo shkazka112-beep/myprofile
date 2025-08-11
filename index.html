@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azka Shaikh — Creative Technologist</title>
+  <meta name="description" content="Personal landing page for Azka Shaikh — developer, designer, and creative technologist. Portfolio, services, contact and resume." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#7c3aed; /* violet */
+      --glass: rgba(255,255,255,0.04);
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#071023 0%, #071827 60%); color:#e6eef8}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:20px}
+    nav{display:flex;gap:16px;align-items:center}
+    nav a{padding:8px 12px;border-radius:8px;font-weight:600;font-size:14px}
+    .cta{background:linear-gradient(90deg,var(--accent),#06b6d4);padding:10px 14px;border-radius:10px;color:white;font-weight:700}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:center;margin-top:18px}
+    .hero-card{background:var(--card);padding:28px;border-radius:16px;box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    h1{font-size:34px;margin:0 0 8px}
+    .lead{color:var(--muted);line-height:1.6}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;font-weight:600;color:#cfe6ff;font-size:13px}
+
+    /* Side card */
+    .profile{display:flex;flex-direction:column;gap:12px}
+    .stat{display:flex;justify-content:space-between;padding:10px 12px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:10px}
+    .download{display:block;text-align:center;padding:12px;border-radius:10px;background:rgba(124,58,237,0.12);font-weight:700}
+
+    /* Sections */
+    section{margin-top:26px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+
+    .portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .project{min-height:140px;border-radius:10px;padding:14px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent)}
+
+    /* Contact form */
+    form{display:grid;gap:10px}
+    input,textarea,select{background:#071427;border:1px solid rgba(255,255,255,0.04);padding:10px;border-radius:8px;color:inherit;font-size:14px}
+    button{background:var(--accent);border:0;padding:12px 14px;border-radius:10px;color:white;font-weight:700;cursor:pointer}
+
+    footer{margin-top:36px;padding:20px 0;border-top:1px solid rgba(255,255,255,0.03);color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr}
+      .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      nav{flex-wrap:wrap}
+      .portfolio-grid{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">AS</div>
+        <div>
+          <div style="font-weight:800;font-size:16px">Azka Shaikh</div>
+          <div style="font-size:13px;color:var(--muted)">Creative Technologist • Web Developer • Designer</div>
+        </div>
+      </div>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact" class="cta">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-card">
+          <h1>Hi, I’m Azka — I build thoughtful digital experiences.</h1>
+          <p class="lead">I’m a full-stack web developer and product designer who loves turning ideas into beautiful, usable products. I work with JavaScript, React, Node.js, and make interfaces that are accessible and delightful.</p>
+
+          <div class="skills" aria-hidden="false">
+            <span class="skill">React</span>
+            <span class="skill">Next.js</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">TypeScript</span>
+            <span class="skill">Tailwind CSS</span>
+            <span class="skill">Figma</span>
+          </div>
+
+          <div style="display:flex;gap:12px;margin-top:18px;align-items:center">
+            <a class="cta" href="#contact">Work with me</a>
+            <a href="#portfolio" style="padding:10px 12px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04);font-weight:700">View portfolio</a>
+          </div>
+
+          <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap">
+            <div class="card" style="display:flex;gap:12px;align-items:center">
+              <div style="font-weight:800;font-size:18px">8+</div>
+              <div style="color:var(--muted);font-size:13px">Years experience</div>
+            </div>
+            <div class="card" style="display:flex;gap:12px;align-items:center">
+              <div style="font-weight:800;font-size:18px">50+</div>
+              <div style="color:var(--muted);font-size:13px">Projects shipped</div>
+            </div>
+            <div class="card" style="display:flex;gap:12px;align-items:center">
+              <div style="font-weight:800;font-size:18px">Freelance / Agency</div>
+              <div style="color:var(--muted);font-size:13px">Available for hire</div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="profile">
+          <div class="card" style="text-align:center">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Azka Shaikh" style="width:100%;border-radius:10px;object-fit:cover;max-height:180px;display:block;margin-bottom:12px">
+            <div style="font-weight:700">Azka Shaikh</div>
+            <div style="color:var(--muted);font-size:13px;margin-top:6px">Creative Technologist & Full‑Stack Developer</div>
+            <a class="download" href="#" download="Azka_Shaikh_Resume.pdf" style="margin-top:12px;display:inline-block">Download Resume (PDF)</a>
+          </div>
+
+          <div class="stat">
+            <div style="font-weight:700">Location</div>
+            <div style="color:var(--muted)">India</div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:700">Email</div>
+            <div style="color:var(--muted)"><a href="mailto:azka@example.com">azka@example.com</a></div>
+          </div>
+          <div class="stat">
+            <div style="font-weight:700">Phone</div>
+            <div style="color:var(--muted)">+91 9XX-XXX-XXXX</div>
+          </div>
+
+          <div class="card" style="display:flex;gap:8px;justify-content:space-around">
+            <a href="#" title="GitHub" aria-label="GitHub" style="font-weight:700">GitHub</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn" style="font-weight:700">LinkedIn</a>
+            <a href="#" title="Dribbble" aria-label="Dribbble" style="font-weight:700">Dribbble</a>
+          </div>
+        </aside>
+      </div>
+
+      <section id="about">
+        <div class="hero-card card">
+          <h2 style="margin-top:0">About</h2>
+          <p class="lead">I design and code products from concept to launch. My work focuses on building accessible, performance-minded web experiences. I enjoy collaborating with product teams and early-stage startups to take an idea and make it real — shipped, measurable, and delightful.</p>
+          <p style="color:var(--muted);margin-top:10px">Specialities: Front-end engineering, UX/UI design, component systems, performance optimization, and developer tooling.</p>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h2 style="margin-bottom:8px">Selected projects</h2>
+        <div class="portfolio-grid">
+          <div class="project">
+            <h3 style="margin:0 0 6px">Product Design System</h3>
+            <p style="color:var(--muted);font-size:13px">Built a design system with reusable React components, documentation site, and automated visual tests.</p>
+          </div>
+          <div class="project">
+            <h3 style="margin:0 0 6px">E‑commerce Web App</h3>
+            <p style="color:var(--muted);font-size:13px">Performance-first storefront with server-side rendering, checkout flows, and analytics integrations.</p>
+          </div>
+          <div class="project">
+            <h3 style="margin:0 0 6px">SaaS Dashboard</h3>
+            <p style="color:var(--muted);font-size:13px">Interactive dashboards, real-time charts, and role-based access for enterprise customers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="services">
+        <h2 style="margin-bottom:8px">Services</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h4>Web Development</h4>
+            <p style="color:var(--muted);font-size:13px">Full-stack web apps, APIs, static sites, and JAMstack architecture.</p>
+          </div>
+          <div class="card">
+            <h4>Product Design</h4>
+            <p style="color:var(--muted);font-size:13px">UX research, wireframes, high-fidelity prototypes, and component libraries.</p>
+          </div>
+          <div class="card">
+            <h4>Consulting & Mentoring</h4>
+            <p style="color:var(--muted);font-size:13px">Technical audits, architecture reviews, and team mentoring.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2 style="margin-bottom:8px">Testimonials</h2>
+        <div class="grid-3">
+          <div class="card">
+            <p>"Azka delivered our product on time and exceeded expectations. Highly recommended."</p>
+            <div style="color:var(--muted);font-size:13px;margin-top:8px">— Product Manager, Acme Co.</div>
+          </div>
+          <div class="card">
+            <p>"Great designer and engineer — understands both UX and code."</p>
+            <div style="color:var(--muted);font-size:13px;margin-top:8px">— Founder, BrightStart</div>
+          </div>
+          <div class="card">
+            <p>"Worked with Azka on multiple projects; consistent, communicative, and skilled."</p>
+            <div style="color:var(--muted);font-size:13px;margin-top:8px">— CTO, WebWorks</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 style="margin-bottom:8px">Contact</h2>
+        <div class="hero-card card" style="display:grid;grid-template-columns:1fr 320px;gap:16px">
+          <div>
+            <form id="contactForm" action="#" onsubmit="handleContact(event)">
+              <label for="name">Name</label>
+              <input id="name" name="name" required placeholder="Your name">
+
+              <label for="email">Email</label>
+              <input id="email" type="email" name="email" required placeholder="you@example.com">
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+
+              <button type="submit">Send message</button>
+            </form>
+            <div id="formMsg" style="margin-top:8px;color:var(--muted);font-size:13px"></div>
+          </div>
+
+          <aside style="padding:12px;background:rgba(255,255,255,0.02);border-radius:10px">
+            <h4 style="margin-top:0">Get in touch</h4>
+            <p style="color:var(--muted);font-size:13px">Prefer email? <a href="mailto:azka@example.com">azka@example.com</a></p>
+            <p style="color:var(--muted);font-size:13px">Availability: Open to freelance & remote roles.</p>
+            <div style="margin-top:12px">
+              <strong style="display:block">Quick links</strong>
+              <ul style="padding-left:18px;color:var(--muted)">
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <span id="year"></span> Azka Shaikh — All rights reserved.</div>
+        <div style="display:flex;gap:14px">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const formMsg = document.getElementById('formMsg');
+      // For demo, we'll simulate sending and provide a mailto fallback
+      if(!name||!email||!message){ formMsg.textContent = 'Please fill all fields.'; return }
+      formMsg.textContent = 'Thanks — opening your email client to send the message.';
+      const subject = encodeURIComponent('Inquiry from ' + name);
+      const body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
+      window.location.href = 'mailto:azka@example.com?subject=' + subject + '&body=' + body;
+    }
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.length>1){
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    })
+  </script>
+</body>
+</html>
